@@ -3,7 +3,7 @@ function stringRepeater(str, num){
     for(let i = 1; i <= num; i++){
          string += str
     }
-    console.log(string)
+    console.log(string);
 }
 
 stringRepeater("q", 4); // 'qqqq'
