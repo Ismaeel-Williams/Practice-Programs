@@ -1,5 +1,3 @@
-let arr = []
-
 function stayPositive(arr){ 
     let a = []
     for(let i = 0; i < arr.length; i++){
