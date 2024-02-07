@@ -4,7 +4,13 @@ function zipper(arr1, arr2){
     for(let i = 0; i < n; i++){
         let a = []
         for(let j = i; j < i+1; j++){
-            a.push(arr1[j], arr2[j])
+            if (j < arr1.length && j < arr2.length) {
+                a.push(arr1[j], arr2[j]);
+            } else if (j < arr1.length) {
+                a.push(arr1[j], null);
+            } else if (j < arr2.length) {
+                a.push(null, arr2[j]);
+            }
         }
         array.push(a)
     }
