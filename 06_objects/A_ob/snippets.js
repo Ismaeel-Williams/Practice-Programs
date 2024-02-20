@@ -16,6 +16,8 @@ console.log(movie.duration); //4 //undefined
 console.log(movie["starring"][1]); //Edward Norton
 console.log(movie.starring.length); //2
 
+console.log(" ")
+
 //snippet 2
 let restaurant = {
     name: "bob's Burgers",
@@ -37,3 +39,55 @@ console.log(restaurant[someKey]); //undefined //["burgers", "fries", "shakes"]
 console.log(restaurant.someKey); //undefined
 
 console.log(restaurant.menu.includes("fries")); //true
+
+console.log(" ")
+
+//snippet 3
+let dog = {
+    name: "Manny",
+    age: 5,
+    breed: "pug",
+    color: "fawn",
+    favouriteFoods: ["bacon"],
+};
+
+console.log(dog.age); //5
+console.log(dog.breed); //pug
+console.log(dog.favouriteFoods); //["bacon"]
+
+dog.age++;
+dog.breed = dog.breed.toUpperCase();
+dog.favouriteFoods.push("sausage"); 
+
+console.log(dog.age); //6
+console.log(dog.breed); //PUG
+console.log(dog.favouriteFoods); //["bacon", "sausage"]
+
+for (let property in dog) {
+    console.log(property + " is " + dog[property]); //undefined //name is Manny //age is 6 //breed is PUG //color is fawn //favouriteFoods is bacon,sausage
+}
+
+console.log(" ")
+
+//snippet 4
+let recipe = {
+    name: "Old Fashioned Pancakes",
+    difficulty: "easy",
+    tasy: true,
+    ingrediants: ["eggs", "milk", "butter", "flour", "sugar"], 
+};
+
+console.log(recipe.name);
+console.log(recipe["name"]);
+console.log(recipe.ingrediants.length);
+console.log(recipe.calories);
+
+let someVariable = "difficulty";
+console.log(recipe[someVariable]);
+console.log(recipe.someVariable);
+
+for (let i = 0; i < recipe.ingrediants.length; i++){
+    console.log(recipe.ingrediants[i])
+}
+
+console.log(" ")
