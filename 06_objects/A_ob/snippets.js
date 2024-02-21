@@ -77,7 +77,7 @@ let recipe = {
     ingrediants: ["eggs", "milk", "butter", "flour", "sugar"], 
 };
 
-console.log(recipe.name);
+console.log(recipe.name); //
 console.log(recipe["name"]);
 console.log(recipe.ingrediants.length);
 console.log(recipe.calories);
